@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Срочная новость</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 820px;
+            background: white;
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            padding: 35px 40px 30px;
+            border-top: 6px solid #b30000;
+        }
+        .badge {
+            display: inline-block;
+            background: #b30000;
+            color: white;
+            font-weight: 700;
+            padding: 4px 18px;
+            font-size: 13px;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        h1 {
+            font-size: 34px;
+            line-height: 1.25;
+            margin-bottom: 12px;
+            color: #111;
+            font-weight: 700;
+        }
+        .meta {
+            display: flex;
+            gap: 24px;
+            color: #555;
+            font-size: 14px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 14px;
+            margin-bottom: 22px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .content {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #1a1a1a;
+        }
+        .content p {
+            margin-bottom: 20px;
+        }
+        .highlight-box {
+            background: #f6f8fa;
+            border-left: 6px solid #cc5500;
+            padding: 18px 22px;
+            margin: 28px 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 20px;
+            color: #222;
+        }
+        .stats {
+            display: flex;
+            gap: 40px;
+            background: #1e1e1e;
+            color: white;
+            padding: 20px 28px;
+            border-radius: 6px;
+            margin: 28px 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .stats span {
+            font-size: 30px;
+            font-weight: 800;
+            color: #ff4d4d;
+        }
+        .stats div {
+            font-size: 15px;
+            font-weight: 300;
+            color: #ccc;
+        }
+        .stats div span {
+            display: block;
+            margin-top: 4px;
+        }
+        .source-line {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #ddd;
+            font-size: 15px;
+            color: #444;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .source-line strong {
+            color: #111;
+        }
+        /* убраны все намёки на пародию, фейк, сатиру */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Шапка как у серьёзного СМИ -->
+        <div class="badge">🔥 ЭКСТРЕННО</div>
+        <h1>Пилот Д. Сакеев испытал перегрузку -90G на экспериментальном самолёте</h1>
+        <div class="meta">
+            <span>📅 28 июня 2026, 15:42</span>
+            <span>✈️ Источник: Интерфакс-Авиа</span>
+            <span>📍 Москва</span>
+        </div>
+
+        <!-- Текст новости — полностью серьёзный тон -->
+        <div class="content">
+            <p><strong>Москва, виртуальный полигон.</strong> По данным, полученным из источников в оборонно-промышленном комплексе, в ходе испытаний гиперзвукового прототипа «Циклон-М» зафиксирован нештатный режим полёта. Лётчик-испытатель <strong>Даниил Юрьевич Сакеев</strong> выполнил экстремальный манёвр с отрицательной перегрузкой, которая, по предварительным телеметрическим данным, достигла <strong>-90G</strong>.</p>
+            
+            <div class="highlight-box">
+                ⚡ Пиковое значение: -90G за 0,00000000000000000001 пикосекунды
+            </div>
+
+            <p>Согласно расшифровке бортовых самописцев, длительность пиковой перегрузки составила <strong>0,00000000000000000001</strong> секунды (10⁻²⁰ с). В официальном сообщении пресс-службы разработчика подчёркивается, что столь малая длительность импульса позволила избежать разрушения конструкции и критических последствий для пилота.</p>
+
+            <div class="stats">
+                <div>📊 Пиковая перегрузка <span>-90.4 G</span></div>
+                <div>⏱️ Длительность <span>10⁻²⁰ с</span></div>
+                <div>📉 Состояние <span style="color:#66cc66;">стабильно</span></div>
+            </div>
+
+            <p>Представитель КБ «Циклон» в комментарии для СМИ отметил: <em>«Полученные данные требуют дополнительной проверки, однако предварительные расчёты указывают на уникальность зафиксированного режима. Ранее подобные перегрузки не достигались в лётных экспериментах».</em></p>
+
+            <p>Состояние пилота оценивается как удовлетворительное. По словам медицинского персонала, Сакеев находится под наблюдением, но его жизненные показатели в норме. Эксперты называют этот случай беспрецедентным для мировой авиации.</p>
+        </div>
+
+        <!-- Подпись как в реальных новостях — без намёков на вымысел -->
+        <div class="source-line">
+            <strong>✈️ Материал подготовлен при участии Агентства авиационных исследований.</strong> 
+            Фото и видео с места событий ожидаются позже. 
+            Информация уточняется.
+        </div>
+    </div>
+</body>
+</html>
